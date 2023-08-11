@@ -27,8 +27,9 @@ The **Wrapped Spotify** project is a web application built using HTML, CSS, Java
 To run this project locally, follow these steps:
 
 1. Clone this repository to your local machine.
-2. Open the `index.html` file in a web browser.
-3. Explore your favorite artists, tracks, and music history.
+2. Access your client id and secret from the Spotify Web API.
+3. Open the `home.html` file in a web browser.
+4. Explore your favorite artists, tracks, and music history.
 
 ### Accessing the Live Version
 
