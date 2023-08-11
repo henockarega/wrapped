@@ -1,0 +1,141 @@
+<!-- The HTML file for the home page -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='home.css') }}"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+
+    <title>Wrapped Spotify</title>
+  </head>
+
+  <body>
+    <!-- Creates the div for the webiste title-->
+    <div style="margin: 0" class="top-bar-div">
+      <div class="top-title-div">
+        <div
+          style="display: flex; align-items: center; justify-content: center"
+        >
+          <i
+            style="color: black; font-size: xxx-large; width: 50%; margin: 0"
+            class="fas fa-headphones"
+          ></i>
+        </div>
+        <div>
+          <p style="padding-left: 20px; width: 50%; font-family: 'Varela Round', sans-serif; font-size: xx-large">
+            Wrapped Spotify
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Creates the center box that holds the texts, button, and images -->
+    <div class="center-box-div">
+      <div class="main">
+        <div class="center-left-div">
+          <div class="instructions-div">
+            <p
+              class="view-title"
+              style="font-family: 'Varela Round', sans-serif; font-weight: bold; font-size: x-lage;"
+            >
+              Login to check your top artists and tracks.
+            </p>
+
+            <p style="padding-top: 10px;">
+              View your last 50 recently played tracks.
+            </p>
+
+            <p style="padding-top: 10px;">
+              Click on the spotify icons to get redirected to the Spotify page.
+            </p>
+          </div>
+
+          <!-- Creates the login button -->
+          <div
+            class="login-button-div"
+            style="
+              padding-top: 20px;
+              display: flex;
+              justify-content: center;
+              margin-right: 20px;
+            "
+          >
+            <a
+              class="spotify-login-button"
+              href="login"
+              style="text-decoration: none; height: 50%"
+            >
+              Continue with Spotify
+            </a>
+          </div>
+        </div>
+
+        <!-- Creates the grid that holds the images -->
+        <div class="center-right-div">
+          <div>
+            <img
+              style="padding-bottom: 10px"
+              src="https://i.scdn.co/image/ab67616100005174214f3cf1cbe7139c1e26ffbb"
+            />
+            <img
+              style="padding-bottom: 10px"
+              src="https://i.scdn.co/image/ab67616100005174e03a98785f3658f0b6461ec4"
+            />
+          </div>
+          <div>
+            <img
+              style="padding-bottom: 10px"
+              src="https://i.scdn.co/image/ab67616100005174c36dd9eb55fb0db4911f25dd"
+            />
+            <img
+              style="padding-bottom: 10px"
+              src="https://i.scdn.co/image/ab67616100005174f173136b94ae2f75f49f8b2b"
+            />
+          </div>
+            <div>
+            <img
+              style="padding-bottom: 10px"
+              src="https://i.scdn.co/image/ab67616100005174437b9e2a82505b3d93ff1022"
+            />
+            <img
+              style="padding-bottom: 10px"
+              src="https://i.scdn.co/image/ab676161000051747f6d6cac38d494e87692af99"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- div that creates the social media and copyright icons -->
+    <div class="footer-div">
+      <div class="socials">
+        <a href="https://github.com/henockarega" target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/henock-arega/" target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a href="https://www.instagram.com/henockarega/" target="_blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="https://open.spotify.com/user/31sdaauulj4j5fzauacprcqwktca" target="_blank"><i class="fa-brands fa-spotify"></i></a>
+      </div>
+    </div>
+    <div class="footerBottom">
+      <p style="font-family: 'Varela Round', sans-serif;"> Wrapped Spotify is not affiliated or associated with Spotify AB.</p>
+      <p style="margin: 0; font-family: 'Varela Round', sans-serif;">
+        Copyright &#169;2023; Designed by
+        <span class="deigner">Henock Arega</span>
+      </p>
+    </div>
+  </body>
+</html>

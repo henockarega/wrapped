@@ -1,0 +1,219 @@
+.body {
+  background-color: #474747;
+  margin: 0;
+  padding: 0;
+}
+
+.left-side {
+  background-color: rgb(25, 25, 26);
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  width: 220px;
+  top: 0;
+  bottom: 0;
+  font-family: 'Varela Round', sans-serif;
+}
+
+.nav-link {
+  font-family: 'Varela Round', sans-serif;
+  height: 40px;
+  width: 100%;
+  margin-left: 3px;
+  display: flex;
+}
+
+.nav-link a {
+  position: relative;
+  text-decoration: none;
+  color: rgb(247, 244, 244);
+}
+
+.logout::after,
+.nav-link a::after {
+  content: "";
+  position: absolute;
+  background-color: green;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s;
+}
+
+.logout:hover::after,
+.logout:focus::after,
+.logout:active::after,
+.nav-link a:hover::after,
+.nav-link a:focus::after,
+.nav-link a:active::after {
+  width: 100%;
+}
+
+.nav-link a.active::after {
+  width: 100%;
+  left: 0;
+}
+
+h3,
+h4 {
+  color: white;
+  font-size: medium;
+}
+
+.right-side {
+  display: grid;
+  background-color: #474747;
+  margin-left: 220px;
+  overflow-y: auto;
+}
+
+.time-buttons {
+  margin-bottom: 10px;
+}
+
+img {
+  margin-top: 20px;
+  height: auto;
+  width: 90%;
+  object-fit: cover;
+}
+
+.top-pics {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  margin-left: 10px;
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+
+.stats {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Varela Round', sans-serif;
+  
+  
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #141313;
+}
+
+th {
+  border-bottom: 2px solid #141313;
+}
+
+.spotify-logo {
+  width: 25px;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+p {
+  font-family: 'Varela Round', sans-serif;
+  color: white;
+}
+
+.dropdown-btn {
+  display: none;
+}
+
+.no-data-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+@media screen and (max-width: 1000px) {
+  .top-pics {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .top-pic-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .top-pics {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 10px;
+  }
+
+  .top-pic-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  table th:nth-child(3),
+  table td:nth-child(3),
+  table th:nth-child(4),
+  table td:nth-child(4),
+  table th:nth-child(5),
+  table td:nth-child(5) {
+    display: none;
+  }
+
+  .left-side {
+    width: 0px;
+    display: none;
+  }
+
+  .right-side {
+    margin-left: 0px;
+  }
+
+  .top-pics {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 10px;
+  }
+
+  .top-pic-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-link {
+    display: none;
+  }
+  
+  .stats{
+    padding-bottom: 10vh;
+  }
+
+  .dropdown-btn {
+    display: block;
+    color: white;
+    padding: 10px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+}

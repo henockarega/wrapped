@@ -1,0 +1,296 @@
+<!-- A JavaScrip code that creates the toggle menu for moblie or small devices-->
+<script>
+  function toggleMenu() {
+    var menu = document.getElementsByClassName("nav-link2");
+    for (var i = 0; i < menu.length; i++) {
+      if (menu[i].style.display === "none") {
+        menu[i].style.display = "block";
+      } else {
+        menu[i].style.display = "none";
+      }
+    }
+  }
+</script>
+
+<!-- The base HTML file for top artist, track, and history page -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='base.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+  />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      crossorigin="anonymous"
+    />
+    <title>Wrapped Spotify</title>
+  </head>
+
+  <body class="body">
+    <!-- Creates the left fixed side that holds the buttons for artist, track, and history pages-->
+    <div class="left-side">
+      <div
+        style="
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding-left: 30px;
+        "
+      >
+        <i
+          style="width: 20px; color: white; font-size: xxx-large; width: 50%"
+          class="fas fa-headphones"
+        ></i>
+        <h4 style="padding-top: 40px; padding-bottom: 30px; width: 100%">
+          Wrapped Spotify
+        </h4>
+      </div>
+
+      <!-- nav class for those pages-->
+      <nav class="nav-link">
+        <a {% if active_page_type=='artists' %} class="active" {% endif %}
+        style="text-decoration: none; color: white; font-family: 'Varela Round', sans-serif;" href="/artists/short_term">
+
+        <i class="fas fa-user-alt"></i>
+        Favorite Artists
+        </a>
+      </nav>
+
+      <nav class="nav-link">
+        <a {% if active_page_type=='tracks' %} class="active" {% endif %}
+        style="text-decoration: none; color: white; font-family: 'Varela Round', sans-serif;" href="/tracks/short_term">
+        <i class="fas fa-music"></i>
+        Favorite Tracks
+        </a>
+      </nav>
+      <nav class="nav-link">
+        <a {% if active_page_type=='history' %} class="active" {% endif %}
+        style="text-decoration: none; color: white; font-family: 'Varela Round', sans-serif;" href="/history">
+        <i class="fas fa-history"></i>
+        Music History
+        </a>
+      </nav>
+    </div>
+
+    <!-- Creates the right side of the screen that holds the time buttons (4 weeks, 6 month, all-time) and displays users data -->
+    <div class="right-side">
+      <div>
+        <!-- Mobile dropdown button -->
+        <div class="dropdown-btn" onclick="toggleMenu()">
+          <i class="fas fa-bars"></i>
+        </div>
+
+        <!-- Creates all three buttons within the dropdown menu -->
+        <nav
+          class="nav-link2"
+          style="
+            display: none;
+            padding-left: 10px;
+            padding-bottom: 10px;
+            padding-top: 5px;
+          "
+        >
+          <a style="text-decoration: none; color: white"
+          href="/artists/short_term">
+          <i class="fas fa-user-alt"></i>
+          Favorite Artists
+          </a>
+        </nav>
+
+        <nav
+          class="nav-link2"
+          style="display: none; padding-left: 10px; padding-bottom: 10px"
+        >
+          <a style="text-decoration: none; color: white" href="/tracks/short_term">
+          <i class="fas fa-music"></i>
+          Favorite Tracks
+          </a>
+        </nav>
+
+        <nav
+          class="nav-link2"
+          style="display: none; padding-left: 10px; padding-bottom: 10px"
+        >
+          <a style="text-decoration: none; color: white" href="/history">
+          <i class="fas fa-history"></i>
+          Music History
+          </a>
+        </nav>
+      </div>
+
+      <!-- Creates the logout button so users can logout -->
+      <div
+        style="
+          display: flex;
+          justify-content: end;
+          padding-right: 30px;
+          padding-top: 20px;
+        "
+      >
+        <a
+          class="logout"
+          style="text-decoration: none; color: white; position: relative; font-family: 'Varela Round', sans-serif;"
+          href="/logout"
+          >Logout</a
+        >
+      </div>
+      <!-- Creates the time buttons for the artist and track pages -->
+      {% if active_page_type != 'history' %}
+      <div class="time-buttons">
+        <nav
+          class="nav-link"
+          style="
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+          "
+        >
+          <!-- Creates the 4 weeks button -->
+          <a {% if active_page_date=='short_term' %} class="active" {% endif %}
+          style="margin-right: 20px; color: white; text-decoration: none; font-family: 'Varela Round', sans-serif;"
+          href="short_term"> 4-WEEKS
+          </a>
+
+          <!-- Creates the 6 months button -->
+          <a {% if active_page_date=='medium_term' %} class="active" {% endif%}
+          style="margin-right: 20px; color: white; text-decoration: none; font-family: 'Varela Round', sans-serif;"
+          href="medium_term"> 6-MONTHS
+          </a>
+
+          <!-- Creates the all-time button -->
+          <a {% if active_page_date=='long_term' %} class="active" {% endif%}
+          style="margin-right: 20px; color: white; text-decoration: none; font-family: 'Varela Round', sans-serif;"
+          href="long_term"> ALL-TIME</a>
+        </nav>
+      </div>
+      {% else %} {% endif %}
+      <!-- Creates the base title, that is then changed in other HTML file -->
+      <h3
+        style="
+          margin-left: 25px;
+          font-family: 'Varela Round', sans-serif;
+          color: white;
+          font-weight: bold;
+        "
+      >
+        {% block data_type %} Base {% endblock %}
+      </h3>
+
+      <!-- Creates the grid that holds the top five artists/tracks and their names -->
+      {% if user_data|length != 0 %}
+      <div class="top-pics">
+        {% for data in user_data[:5] %}
+        <div class="top-pic-item">
+          <img src="{{ data.images }}" />
+          <p
+            style="
+              text-align: center;
+              color: white;
+              font-weight: bold;
+              padding-right: 25px;
+              margin: 0;
+            "
+          >
+            {% if active_page_type == 'artists' %} {{ data.name }} {% else %} {{
+            data.track_name }}
+          </p>
+          <p
+            style="
+              font-size: small;
+              text-align: center;
+              padding-right: 25px;
+              margin: 0;
+            "
+          >
+            by {{ data.artist_name }}
+          </p>
+          {% endif %}
+        </div>
+        {% endfor %}
+      </div>
+
+      <!-- Creates the table that neatly displays all the data-->
+      <div class="stats">
+        <table style="color: white;">
+          <thead>
+            <tr>
+              {% if active_page_type == 'tracks' or active_page_type ==
+              'history' %}
+              <th>#</th>
+              <th>Tracks</th>
+              <th>Artist</th>
+              <th>Album</th>
+              <th>Link</th>
+              {% else %}
+              <th>#</th>
+              <th>Artist</th>
+              <th>Genre</th>
+              <th>Link</th>
+
+              {% endif %}
+            </tr>
+          </thead>
+          <tbody>
+            {% for data in user_data %}
+            <tr>
+              {% if active_page_type == 'tracks' or active_page_type ==
+              'history' %}
+              <td>{{ data.rank }}</td>
+              <td>{{ data.track_name }}</td>
+              <td>{{ data.artist_name }}</td>
+              <td>{{ data.album_name }}</td>
+              {% else %}
+              <td>{{ data.rank }}</td>
+              <td>{{ data.name }}</td>
+              <td>{{ data.genres[:3] | join(', ') }}</td>
+
+              {% endif %}
+              <!-- Creates that spotify button that holds link to the artits/tracks spotify page-->
+              <td>
+                <a href="{{ data.spotify_url }}" target="_blank">
+                  <img
+                    class="spotify-logo"
+                    src="https://www.freepnglogos.com/uploads/spotify-logo-png/file-spotify-logo-png-4.png"
+                    alt="Spotify"
+                  />
+                </a>
+              </td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+    {% else %}
+    <div class="no-data-div">
+      <h3 style="color: white; text-align: center; padding-bottom: 100px;">
+        Not enough data
+        {% if active_page_date == 'short_term'%}
+        in the past 4 weeks.
+        {% elif active_page_date == 'medium_term' %}
+        in the past 6 months.
+        {% else %}
+        - come back another time.
+        {% endif %}
+      </h3>
+    </div>
+      {% endif %}
+  </body>
+</html>
