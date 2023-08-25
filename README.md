@@ -15,7 +15,7 @@ The **Wrapped Spotify** project is a web application built using HTML, CSS, Java
 
 ## Technologies Used
 
-- HTML, CSS, JavaScript for the frontend.
+- HTML, CSS, JavaScript for the front end.
 - Python and Spotify Web API for fetching user-specific music data.
 - Font Awesome for icons.
 - Bootstrap for styling and responsive design.
@@ -35,9 +35,16 @@ To run this project locally, follow these steps:
 
 You can also access the live version of the **Wrapped Spotify** project directly from your web browser. Just visit the following URL:
 
-(https://wrappedspotify.com)
+(https://wrappedspotify.com) 
 
 Explore and enjoy tracking your favorite music!
+
+The website is currently under review and will be live soon. In the meantime refer to the images or try running it locally to get your stats.
+
+## Pictures
+
+![Uploading Screen Shot 2023-08-24 at 11.16.02 PM.png…]()
+
 
 ## Contributions
 
