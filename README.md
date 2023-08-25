@@ -43,8 +43,10 @@ The website is currently under review and will be live soon. In the meantime ref
 
 ## Pictures
 
-![Uploading Screen Shot 2023-08-24 at 11.16.02 PM.png…]()
-
+![Home Page](https://i.imgur.com/GFAnRqX.png)
+![Favorite Artist](https://i.imgur.com/7IiTvB7.png)
+![Favorite Track](https://i.imgur.com/cyDZ6Jl.png)
+![Music History](https://i.imgur.com/6k3LyaZ.png)
 
 ## Contributions
 
