@@ -1,10 +1,10 @@
-# Wrapped Spotify Project
+# Python Spotify Wrapped Project
 
-Welcome to the GitHub repository for the **Wrapped Spotify** project! This web application allows users to track their favorite artists, tracks, and music history on Spotify. It provides insights into your music preferences and history over different time periods.
+Welcome to the GitHub repository for the **Python Spotify Wrapped** project! This web application allows users to track their favorite artists, tracks, and music history on Spotify. It provides insights into your music preferences and history over different time periods.
 
 ## Project Overview
 
-The **Wrapped Spotify** project is a web application built using HTML, CSS, JavaScript, and Python. It utilizes the Spotify Web API to fetch and display user-specific data such as favorite artists, tracks, and music history. The project offers responsive design, adapting to various screen sizes and devices.
+The **Python Spotify Wrapped** project is a web application built using HTML, CSS, JavaScript, and Python. It utilizes the Spotify Web API to fetch and display user-specific data such as favorite artists, tracks, and music history. The project offers responsive design, adapting to various screen sizes and devices.
 
 ## Features
 
@@ -43,10 +43,10 @@ The website is currently under review and will be live soon. In the meantime ref
 
 ## Pictures
 
-![Home Page](https://i.imgur.com/GFAnRqX.png)
-![Favorite Artist](https://i.imgur.com/7IiTvB7.png)
-![Favorite Track](https://i.imgur.com/cyDZ6Jl.png)
-![Music History](https://i.imgur.com/6k3LyaZ.png)
+![Home Page]([img]https://i.imgur.com/lWE42Xx.png[/img])
+![Favorite Artist]([img]https://i.imgur.com/4fnzFhJ.png[/img])
+![Favorite Track]([img]https://i.imgur.com/aKKP7fb.png[/img])
+![Music History]([img]https://i.imgur.com/SOYH7n5.png[/img])
 
 ## Contributions
 
