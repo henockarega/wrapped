@@ -43,10 +43,10 @@ The website is currently under review and will be live soon. In the meantime ref
 
 ## Pictures
 
-![Home Page]([img]https://i.imgur.com/lWE42Xx.png[/img])
-![Favorite Artist]([img]https://i.imgur.com/4fnzFhJ.png[/img])
-![Favorite Track]([img]https://i.imgur.com/aKKP7fb.png[/img])
-![Music History]([img]https://i.imgur.com/SOYH7n5.png[/img])
+![Home Page](https://i.imgur.com/lWE42Xx.png)
+![Favorite Artist](https://i.imgur.com/4fnzFhJ.png)
+![Favorite Track](https://i.imgur.com/aKKP7fb.png)
+![Music History](https://i.imgur.com/SOYH7n5.png)
 
 ## Contributions
 
