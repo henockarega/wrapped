@@ -33,12 +33,6 @@ To run this project locally, follow these steps:
 
 ### Accessing the Live Version
 
-You can also access the live version of the **Wrapped Spotify** project directly from your web browser. Just visit the following URL:
-
-(https://wrappedspotify.com) 
-
-Explore and enjoy tracking your favorite music!
-
 The website is currently under review and will be live soon. In the meantime refer to the images or try running it locally to get your stats.
 
 ## Pictures
