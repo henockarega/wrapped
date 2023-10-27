@@ -37,10 +37,10 @@ The website is currently under review and will be live soon. In the meantime ref
 
 ## Pictures
 
-![Home Page](https://i.imgur.com/lWE42Xx.png)
-![Favorite Artist](https://i.imgur.com/4fnzFhJ.png)
-![Favorite Track](https://i.imgur.com/aKKP7fb.png)
-![Music History](https://i.imgur.com/SOYH7n5.png)
+![Home Page](https://i.imgur.com/DfC56Kk.png)
+![Favorite Artist](https://i.imgur.com/nKUtOEx.png)
+![Favorite Track](https://i.imgur.com/mDxiJqE.png)
+![Music History](https://i.imgur.com/VkqOKFJ.png)
 
 ## Contributions
 
