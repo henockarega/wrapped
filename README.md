@@ -1,10 +1,10 @@
-# Python Spotify Wrapped Project
+# Python Your Top Artist Project
 
-Welcome to the GitHub repository for the **Python Spotify Wrapped** project! This web application allows users to track their favorite artists, tracks, and music history on Spotify. It provides insights into your music preferences and history over different time periods.
+Welcome to the GitHub repository for the **Your Top Artist** project! This web application allows users to track their favorite artists, tracks, and music history on Spotify. It provides insights into your music preferences and history over different periods.
 
 ## Project Overview
 
-The **Python Spotify Wrapped** project is a web application built using HTML, CSS, JavaScript, and Python. It utilizes the Spotify Web API to fetch and display user-specific data such as favorite artists, tracks, and music history. The project offers responsive design, adapting to various screen sizes and devices.
+The **Your Top Artist** project is a web application built using HTML, CSS, JavaScript, and Python. It utilizes the Spotify Web API to fetch and display user-specific data such as favorite artists, tracks, and music history. The project offers responsive design, adapting to various screen sizes and devices.
 
 ## Features
 
