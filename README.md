@@ -33,7 +33,7 @@ To run this project locally, follow these steps:
 
 ### Accessing the Live Version
 
-The website is currently under review and will be live soon. In the meantime refer to the images or try running it locally to get your stats.
+The live version of the website can be found here: https://yourtopartist.com/.
 
 ## Pictures
 
